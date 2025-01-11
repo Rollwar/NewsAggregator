@@ -1,5 +1,10 @@
-﻿namespace NewsAggregator.Domain.Entities;
+﻿using NewsAggregator.Domain.Common;
 
-public class Feedback
+namespace NewsAggregator.Domain.Entities;
+
+public class Feedback : Entity
 {
+    public Guid UserId { get; set; }
+    public string HeaderText { get; set; }
+    public string BodyText { get; set; }
 }

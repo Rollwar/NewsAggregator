@@ -1,5 +1,10 @@
-﻿namespace NewsAggregator.Domain.Entities;
+﻿using NewsAggregator.Domain.Common;
 
-public class NotificationTemplate
+namespace NewsAggregator.Domain.Entities;
+
+public class NotificationTemplate : Entity
 {
+    public string Subject { get; set; }
+    public string BodyPlainText { get; set; }
+    public Guid ArticleId { get; set; }
 }

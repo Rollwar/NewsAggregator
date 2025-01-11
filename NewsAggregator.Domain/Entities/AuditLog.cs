@@ -1,5 +1,10 @@
-﻿namespace NewsAggregator.Domain.Entities;
+﻿using NewsAggregator.Domain.Common;
 
-public class AuditLog
+namespace NewsAggregator.Domain.Entities;
+
+public class AuditLog : Entity
 {
+    public Guid UserId { get; set; }
+    public string? Description { get; set; }
+    public string? Comment { get; set; }
 }
