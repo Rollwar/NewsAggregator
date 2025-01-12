@@ -7,4 +7,5 @@ public class AggregationRule : Entity
     public Guid SourceId { get; set; }
     public Guid WordAggregationPatternId { get; set; }
     public bool IsExclude { get; set; } = false;
+    public WordAggregationPattern WordAggregationPattern { get; set; }
 }

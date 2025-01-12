@@ -7,4 +7,5 @@ public class Feedback : Entity
     public Guid UserId { get; set; }
     public string HeaderText { get; set; }
     public string BodyText { get; set; }
+    public User User { get; set; }
 }

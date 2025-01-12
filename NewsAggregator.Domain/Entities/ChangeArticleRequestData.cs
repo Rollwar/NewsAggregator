@@ -9,4 +9,5 @@ public class ChangeArticleRequestData : Entity
     public int PositionForChanging { get; set; }
     public string UpdatedText { get; set; }
     public DateTime RequestDate { get; set; }
+    public User User { get; set; }
 }

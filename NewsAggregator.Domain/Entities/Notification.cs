@@ -10,4 +10,5 @@ public class Notification : Entity
     public string? Error { get; set; }
     public string Message { get; set; }
     public Guid UserId { get; set; }
+    public User User { get; set; }
 }
